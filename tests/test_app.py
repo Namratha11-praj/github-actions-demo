@@ -1,5 +1,8 @@
-from app import app, calculate_result
+import sys
+from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from app import app, calculate_result
 
 def test_calculate_result_pass():
     total, average, result = calculate_result(80, 70, 90)
