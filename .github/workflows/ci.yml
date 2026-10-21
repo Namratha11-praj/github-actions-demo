@@ -2,9 +2,9 @@ name: Student Application CI
 
 on:
   push:
-    branches: [main]
+    branches: [student-result-app]
   pull_request:
-    branches: [main]
+    branches: [student-result-app]
 
 jobs:
   build:
